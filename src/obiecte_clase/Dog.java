@@ -3,8 +3,8 @@ package obiecte_clase;
 public class Dog {
     // Propietati:
     String rasa;
-    int varsta;
-    String nume;
+    int age;
+    String name;
 
     //Constructori
 
@@ -16,12 +16,12 @@ public class Dog {
 
     }
 
-    public Dog(String rasa, int varsta, String nume) {
+    public Dog(String rasa, int age, String name) {
         // Constructor cu paramertrii
 
         this.rasa = rasa;
-        this.varsta = varsta;
-        this.nume = nume;
+        this.age = age;
+        this.name = name;
 
     }
 
@@ -29,12 +29,12 @@ public class Dog {
     public String toString() {
         //Metoda toString (transforma obiectul nostru intr-un text)
         //Atunci cand dorim sa afisam un obiect folosind System.out.println metoda toString se apeleaza automat
-        return "rasa: " + this.rasa + " ,varta: " + this.varsta + " ,nume: " + this.nume;
+        return "rasa: " + this.rasa + " ,varta: " + this.age + " ,nume: " + this.name;
     }
 
     public boolean equals(Object o) {
         Dog obj = (Dog) o; // cast de la Object la Dog
-        if (this.nume.equals(obj.nume) && this.rasa.equals(obj.rasa) && this.varsta == obj.varsta) {
+        if (this.name.equals(obj.name) && this.rasa.equals(obj.rasa) && this.age == obj.age) {
             return true;
         } else {
             return false;
