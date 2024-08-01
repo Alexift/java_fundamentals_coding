@@ -47,5 +47,10 @@ public class Dog {
 //        }else {
 //            return false;
 //        }
+
+
+    }
+    public static void bark() {
+        System.out.println("Ham ham!");
     }
 }
